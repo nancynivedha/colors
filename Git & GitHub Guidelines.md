@@ -1,15 +1,13 @@
 # Git Guidelines
 
-### Commit
+## Commit
 The commit message should be structured as follows:
-
 >`<type>(<scope>): <description>`
-`[optional <body>]`
-`[optional <footer>]`
+>`[optional <body>]`
+>`[optional <footer>]`
 
-### <type>
+## Type
 Must be one of the following:
-
 - `feat`: A new feature
 - `fix`: A bug fix
 - `perf`: A code change that improves performance
@@ -18,9 +16,8 @@ Must be one of the following:
 - `docs`: Documentation only changes
 - `chore`: Changes that affect the build system or external dependencies (other than source code changes)
 
-### <scope>
+## Scope
 The scope should be the name of the object affected. The following is the list of supported scopes:
-
 - `component`: Custom components
 - `plugin`: Custom and 3rd party plugins
 - `directive`: Custom directives
@@ -33,23 +30,22 @@ The scope should be the name of the object affected. The following is the list o
 - `asset`: Fonts, images etc
 - `other`: Scopes other than the ones listed above
 
-### <description>
+## Description
 The description sholud be brief and clear about the change:
-
 - should not longer than 70 characters
 - use the imperative, present tense: "change" not "changed" nor "changes"
 - don't capitalize the first letter
 - no dot (.) at the end 
 
-### <body>
+## Body
 - A longer commit body MAY be provided one blank line after the short description, providing additional contextual information about the code changes.
 - Breaking changes MUST be indicated at the very beginning of the body section. A breaking change MUST consist of the uppercase text BREAKING CHANGE, followed by a colon and a space.
 
-### <footer>
+## Footer
 - A footer MAY be provided one blank line after the body (or after the description if body is missing). 
 - The footer MUST only contain external links, issue references, and other meta-information.
 
-### Example
+## Example
 - Without body & footer
   `feat(component): add new base component (BaseButton)`
 - with body
